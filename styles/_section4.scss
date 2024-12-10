@@ -1,0 +1,51 @@
+.join-meetup {
+  .container {
+    width: 100%;
+
+    padding: 20px 56px;
+    background-color: #97cad114;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 55px;
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      max-width: 600px;
+
+      h3 {
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: 600;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+      }
+
+      button {
+        width: 192px;
+        height: 40px;
+        background-color: #e32359;
+        color: white;
+        border: none;
+        border-radius: 8px;
+      }
+    }
+
+    .handsUp {
+      // margin: 0 auto;
+      max-width: 380px;
+      max-height: 270px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

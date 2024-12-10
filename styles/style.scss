@@ -1,0 +1,41 @@
+@use './reset';
+
+@use './header';
+@use './section1';
+@use './section2';
+@use './section3';
+@use './section4';
+@use './section5';
+@use './footer';
+
+// 1920
+// 1760
+// 1440
+// 1024
+// 768
+// 415
+// 375
+
+// body {
+// }
+
+main {
+  padding: 0 30px;
+  // margin: 0 auto;
+  // width: 1200px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+// @media (max-width: 1760px) {
+//   .container {
+//     width: 100%;
+//   }
+// }

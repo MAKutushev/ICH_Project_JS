@@ -1,0 +1,14 @@
+{
+  "name": "ich_project_js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch styles/style.scss:dist/style.css",
+    "sass2": "sass --watch styles/style2.scss:dist/style2.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

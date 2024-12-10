@@ -1,0 +1,48 @@
+.main-join {
+  padding: 71px 0 122px 0;
+  .container {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    gap: 55px;
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      max-width: 600px;
+
+      h2 {
+        font-size: 42px;
+        line-height: 52px;
+        font-weight: 700;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+      }
+
+      button {
+        width: 125px;
+        height: 40px;
+        background-color: #00798a;
+        color: white;
+        border: none;
+        border-radius: 8px;
+      }
+    }
+
+    .bike {
+      // margin: 0 auto;
+      max-width: 380px;
+      max-height: 270px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./dist/style.css" />
+    <title>JS Final Project</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="left">
+        <a class="logo" href=""
+          ><img src="./assets/icons/header/Logo.svg" alt=""
+        /></a>
+        <div class="search">
+          <input id="search-event" type="text" placeholder="Search events" />
+          <input id="search-location" type="text" value="Mountain View, CA" />
+          <button>
+            <img src="./assets/icons/header/loupe.svg" alt="" />
+          </button>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="language">
+          <img src="./assets/icons/header/language.svg" alt="" />
+          <select id="language">
+            <option value="en">English</option>
+            <option value="de">German</option>
+            <option value="es">Spain</option>
+          </select>
+        </div>
+
+        <button id="login">Lon in</button>
+        <button id="signUp">Sign up</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="main-join">
+        <div class="container">
+          <div class="content">
+            <h2>The people platform—Where interests become friendships</h2>
+            <p>
+              Whatever your interest, from hiking and reading to networking and
+              skill sharing, there are thousands of people who share it on
+              Meetup. Events are happening every day—sign up to join the fun.
+            </p>
+            <button>Join Meetup</button>
+          </div>
+
+          <div class="bike">
+            <img src="./assets/icons/section1/bicycle.svg" alt="bicycle" />
+          </div>
+        </div>
+      </section>
+
+      <section class="events">
+        <div class="container">
+          <div class="top">
+            <h3>
+              Events near
+              <a href="">
+                Mountain View, CA
+                <img src="./assets/icons/section2/pen.svg" alt="pen" />
+              </a>
+            </h3>
+            <a href="">See all events</a>
+          </div>
+
+          <div class="events_items"></div>
+        </div>
+      </section>
+
+      <section class="upcoming">
+        <div class="container">
+          <div class="top">
+            <h3>Upcoming online events</h3>
+            <a href="">See all events</a>
+          </div>
+
+          <div class="upcomingEvents_items"></div>
+        </div>
+      </section>
+
+      <section class="join-meetup">
+        <div class="container">
+          <div class="content">
+            <h3>Join Meetup</h3>
+            <p>
+              People use Meetup to meet new people, learn new things, find
+              support, get out of their comfort zones, and pursue their
+              passions, together. Membership is free.
+            </p>
+            <button>Sign Up</button>
+          </div>
+
+          <div class="handsUp">
+            <img src="./assets/icons/section4/handsUp.svg" alt="handsUp" />
+          </div>
+        </div>
+      </section>
+
+      <section class="categories">
+        <div class="container">
+          <h3>Explore top categories</h3>
+          <div class="categories_items">
+            <ul>
+              <li>
+                <a href=""
+                  ><img
+                    src="./assets/icons/section5/travel_and_outdoor.svg.svg"
+                    alt=""
+                  /><span>Travel and Outdoor</span></a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    src="./assets/icons/section5/social_activities.svg.svg"
+                    alt=""
+                  /><span>Social Activities</span></a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    src="./assets/icons/section5/hobbies_and_passions.svg.svg"
+                    alt=""
+                  />
+                  <span>Hobbies and Passions</span>
+                </a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    src="./assets/icons/section5/sports_and_fitness.svg.svg"
+                    alt=""
+                  /><span>Sports and Fitness</span></a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    src="./assets/icons/section5/health_and_wellness.svg.svg"
+                    alt=""
+                  /><span>Health and Wellbeing</span></a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    src="./assets/icons/section5/technology.svg fill.svg"
+                    alt=""
+                  /><span>Technology</span></a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    src="./assets/icons/section5/art_and_culture.svg fill.svg"
+                    alt=""
+                  /><span>Art and Culture</span></a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    src="./assets/icons/section5/games.svg fill.svg"
+                    alt=""
+                  /><span>Games</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="popular">
+        <div class="container"></div>
+      </section>
+      <section class="2">
+        <div class="container"></div>
+      </section>
+      <section class="3">
+        <div class="container"></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="getStarted">
+          <p>Create your own Meetup group.</p>
+          <button>Get Started</button>
+        </div>
+
+        <div class="links">
+          <ul class="yourAcc">
+            <p>Your Account</p>
+            <li><a href="">Sign up</a></li>
+            <li><a href="">Log in</a></li>
+            <li><a href="">Help</a></li>
+            <li><a href="">Become an Affiliate</a></li>
+          </ul>
+          <ul class="discover">
+            <p>Discover</p>
+            <li><a href="">Groups</a></li>
+            <li><a href="">Calendar</a></li>
+            <li><a href="">Topics</a></li>
+            <li><a href="">Cities</a></li>
+            <li><a href="">Online Events</a></li>
+            <li><a href="">Local Guides</a></li>
+            <li><a href="">Make Friends</a></li>
+          </ul>
+          <ul class="meetup">
+            <p>Meetup</p>
+            <li><a href="">About</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Meetup Pro</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Apps</a></li>
+            <li><a href="">Podcast</a></li>
+          </ul>
+        </div>
+
+        <div class="socialMedia">
+          <p>Follow us</p>
+
+          <div class="socialMedia_links">
+            <div class="socialMedia_links-left">
+              <a href=""
+                ><img src="./assets/icons/footer/facebook.svg" alt=""
+              /></a>
+              <a href=""
+                ><img src="./assets/icons/footer/twitter.svg" alt=""
+              /></a>
+              <a href=""
+                ><img src="./assets/icons/footer/youtube.svg" alt=""
+              /></a>
+              <a href=""
+                ><img src="./assets/icons/footer/instagram.svg" alt=""
+              /></a>
+              <a href=""
+                ><img src="./assets/icons/footer/tiktok.svg" alt=""
+              /></a>
+            </div>
+
+            <div class="socialMedia_links-right">
+              <a href=""
+                ><img src="./assets/icons/footer/googlePlay.svg" alt=""
+              /></a>
+              <a href=""
+                ><img src="./assets/icons/footer/appleStore.svg" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="moreLinks">
+          <p>© 2024 Meetup</p>
+          <a href="">Terms of Service</a>
+          <a href="">Privacy Policy</a>
+          <a href="">Do Not Sell or Share My Personal Data</a>
+          <a href="">Cookie Policy</a>
+          <a href="">Help</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
