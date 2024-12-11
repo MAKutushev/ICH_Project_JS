@@ -25,18 +25,20 @@
         font-weight: 400;
       }
 
-      button {
+      a {
         width: 125px;
         height: 40px;
         background-color: #00798a;
-        color: white;
         border: none;
         border-radius: 8px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     }
 
     .bike {
-      // margin: 0 auto;
       max-width: 380px;
       max-height: 270px;
 

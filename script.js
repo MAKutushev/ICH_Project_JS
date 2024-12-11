@@ -118,7 +118,7 @@ function renderEvents(events) {
           event.type === 'online'
             ? `
         <div class="event-online-badge">
-          <img src="./assets/icons/section2/camera.svg" alt="Camera Icon" />
+          <img src="./assets/icons/_event/camera.svg" alt="Camera Icon" />
           Online Event
         </div>
         `
@@ -131,16 +131,16 @@ function renderEvents(events) {
       event.distance
     } km)</span></p>
         <p class="event-date">
-          <img src="./assets/icons/section2/date.svg" alt="" />
+          <img src="./assets/icons/_event/date.svg" alt="" />
           ${eventDate}
         </p>
         <div class="event-details-row">
         <p class="event-attendees">
-          <img src="./assets/icons/section2/going.svg" alt="" />
+          <img src="./assets/icons/_event/going.svg" alt="" />
           ${event.attendees} going
         </p>
         <p class="event-free">
-          <img src="./assets/icons/section2/free.svg" alt="" />
+          <img src="./assets/icons/_event/free.svg" alt="" />
           Free
         </p>
         </div>
@@ -231,7 +231,7 @@ function renderUpcoming(events) {
           event.type === 'online'
             ? `
         <div class="event-online-badge">
-          <img src="./assets/icons/section2/camera.svg" alt="Camera Icon" />
+          <img src="./assets/icons/_event/camera.svg" alt="Camera Icon" />
           Online Event
         </div>
         `
@@ -244,16 +244,16 @@ function renderUpcoming(events) {
       event.distance
     } km)</span></p>
         <p class="event-date">
-          <img src="./assets/icons/section2/date.svg" alt="" />
+          <img src="./assets/icons/_event/date.svg" alt="" />
           ${eventDate}
         </p>
         <div class="event-details-row">
         <p class="event-attendees">
-          <img src="./assets/icons/section2/going.svg" alt="" />
+          <img src="./assets/icons/_event/going.svg" alt="" />
           ${event.attendees} going
         </p>
         <p class="event-free">
-          <img src="./assets/icons/section2/free.svg" alt="" />
+          <img src="./assets/icons/_event/free.svg" alt="" />
           Free
         </p>
         </div>

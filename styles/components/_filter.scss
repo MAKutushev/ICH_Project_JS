@@ -1,0 +1,148 @@
+.filter {
+  margin-top: 81px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+
+    .filter_events {
+      h2 {
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: 600;
+      }
+      &-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        h3 {
+          width: 64px;
+          text-align: center;
+          padding: 0 2px;
+          margin-top: 16px;
+          font-size: 20px;
+          line-height: 28px;
+          font-weight: 500;
+          color: #00798a;
+          border-bottom: 4px solid #00798a;
+        }
+
+        &-menu {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          .select_container {
+            position: relative;
+            // width: max-content;
+
+            select {
+              font-size: 14px;
+              line-height: 14px;
+              font-weight: 500;
+              color: #212121;
+              width: 170px;
+              padding: 16px;
+              background-color: #f6f7f8;
+              border-radius: 40px;
+              text-align: left;
+              appearance: none;
+              position: relative;
+
+              option {
+                font-size: 14px;
+                line-height: 14px;
+                font-weight: 500;
+                color: #212121;
+                background-color: #f6f7f8;
+                border-radius: 40px;
+              }
+            }
+
+            &::after {
+              content: url('/assets/icons/_filter/select_arrow.svg');
+              position: absolute;
+              right: 16px; // Abstand vom rechten Rand
+              top: 50%;
+              transform: translateY(-50%);
+              pointer-events: none; // Klickschutz
+            }
+          }
+
+          .reset_filter {
+            cursor: pointer;
+          }
+        }
+      }
+
+      &-items {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 56px;
+
+        &-card {
+          display: flex;
+          max-width: 604px;
+          //   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          border-top: 1px solid #d9d9d9;
+          padding: 16px 0;
+          &_image {
+            width: 160px;
+            height: 90px;
+
+            img {
+              width: 100%;
+              height: 100%;
+              border-radius: 8px;
+              object-fit: cover;
+            }
+          }
+
+          &_content {
+            max-width: 433px;
+            height: 100%;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+
+            .event-date {
+              line-height: 20px;
+              font-weight: 500;
+              font-size: 14px;
+              color: #7c6f50;
+              letter-spacing: -0.35px;
+            }
+
+            .event-title {
+              font-size: 16px;
+              line-height: 24px;
+              font-weight: 500;
+              color: #212121;
+            }
+
+            .event-category {
+              line-height: 20px;
+              font-weight: 500;
+              font-size: 14px;
+              color: #707070;
+            }
+
+            .event-attendees {
+              line-height: 20px;
+              font-size: 14px;
+              color: #707070;
+              position: absolute;
+              bottom: -20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

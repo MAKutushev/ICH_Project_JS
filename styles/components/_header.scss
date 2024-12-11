@@ -23,8 +23,8 @@ header {
         border-radius: 8px 0 0 8px;
         border-right: none;
         padding: 13px 24px 13px 37px; /* Platz für das Icon lassen */
-        background: url('../assets/icons/header/search.svg') no-repeat left 10px
-          center;
+        background: url('../assets/icons/_header/search.svg') no-repeat left
+          10px center;
       }
 
       #search-location {
@@ -55,9 +55,7 @@ header {
       align-items: center;
       gap: 4px;
       select {
-        cursor: pointer;
         appearance: none; /* Standard für moderne Browser */
-        border: none;
       }
     }
 

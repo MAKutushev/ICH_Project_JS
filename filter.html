@@ -17,20 +17,20 @@
     <header>
       <div class="left">
         <a class="logo" href="./index.html"
-          ><img src="./assets/icons/header/Logo.svg" alt=""
+          ><img src="./assets/icons/_header/Logo.svg" alt=""
         /></a>
         <div class="search">
           <input id="search-event" type="text" placeholder="Search events" />
           <input id="search-location" type="text" value="Mountain View, CA" />
           <button>
-            <img src="./assets/icons/header/loupe.svg" alt="" />
+            <img src="./assets/icons/_header/loupe.svg" alt="" />
           </button>
         </div>
       </div>
 
       <div class="right">
         <div class="language">
-          <img src="./assets/icons/header/language.svg" alt="" />
+          <img src="./assets/icons/_header/language.svg" alt="" />
           <select id="language">
             <option value="en">English</option>
             <option value="de">German</option>
@@ -50,10 +50,59 @@
             <h2>Events near New York, NY</h2>
             <div class="filter_events-nav">
               <h3>Events</h3>
+
               <div class="filter_events-nav-menu">
-                <select name="" id=""></select>
+                <div class="select_container">
+                  <select id="type">
+                    <option value="">Any Type</option>
+                    <option value="en">Online</option>
+                    <option value="de">Offline</option>
+                  </select>
+                </div>
+
+                <div class="select_container">
+                  <select id="distance">
+                    <option value="">Any Discance</option>
+                    <option value="de">5 km</option>
+                    <option value="es">10 km</option>
+                    <option value="en">15 km</option>
+                    <option value="es">25 km</option>
+                    <option value="es">50 km</option>
+                    <option value="es">75 km</option>
+                    <option value="es">100 km</option>
+                  </select>
+                </div>
+
+                <div class="select_container">
+                  <select id="category">
+                    <option value="">Any Category</option>
+                    <option value="en">Social Activities</option>
+                    <option value="en">Hobbies and Passions</option>
+                    <option value="en">Health and Wellbeing</option>
+                    <option value="de">Business</option>
+                    <option value="es">Technology</option>
+                  </select>
+                </div>
+
+                <div class="select_container">
+                  <select id="date">
+                    <option value="">Any Date</option>
+                    <option value="en">Mar 13, 11:00 AM</option>
+                    <option value="de">Mar 14, 11:00 AM</option>
+                    <option value="de">Mar 14, 8:00 PM</option>
+                    <option value="de">Mar 16, 2:00 PM</option>
+                    <option value="de">Mar 23, 11:30 AM</option>
+                    <option value="es">Mar 30, 2:00 PM</option>
+                  </select>
+                </div>
+
+                <div class="reset_filter">
+                  <img src="./assets/icons/_filter/reset_filter.svg" alt="" />
+                </div>
               </div>
             </div>
+
+            <div class="filter_events-items"></div>
           </div>
 
           <div class="filter_map">
@@ -117,28 +166,28 @@
           <div class="socialMedia_links">
             <div class="socialMedia_links-left">
               <a href=""
-                ><img src="./assets/icons/footer/facebook.svg" alt=""
+                ><img src="./assets/icons/_footer/facebook.svg" alt=""
               /></a>
               <a href=""
-                ><img src="./assets/icons/footer/twitter.svg" alt=""
+                ><img src="./assets/icons/_footer/twitter.svg" alt=""
               /></a>
               <a href=""
-                ><img src="./assets/icons/footer/youtube.svg" alt=""
+                ><img src="./assets/icons/_footer/youtube.svg" alt=""
               /></a>
               <a href=""
-                ><img src="./assets/icons/footer/instagram.svg" alt=""
+                ><img src="./assets/icons/_footer/instagram.svg" alt=""
               /></a>
               <a href=""
-                ><img src="./assets/icons/footer/tiktok.svg" alt=""
+                ><img src="./assets/icons/_footer/tiktok.svg" alt=""
               /></a>
             </div>
 
             <div class="socialMedia_links-right">
               <a href=""
-                ><img src="./assets/icons/footer/googlePlay.svg" alt=""
+                ><img src="./assets/icons/_footer/googlePlay.svg" alt=""
               /></a>
               <a href=""
-                ><img src="./assets/icons/footer/appleStore.svg" alt=""
+                ><img src="./assets/icons/_footer/appleStore.svg" alt=""
               /></a>
             </div>
           </div>
@@ -154,5 +203,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="filterScript.js"></script>
   </body>
 </html>

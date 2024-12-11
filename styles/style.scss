@@ -1,15 +1,19 @@
-@use './reset';
+@use './components/additional/reset';
 
-@use './header';
-@use './section1_join';
-@use './section2_events';
-@use './section3_online';
-@use './section4_meetup';
-@use './section5_categories';
-@use './section6_popular';
-@use './section7_how';
-@use './section8_friendship';
-@use './footer';
+//main page
+@use './components/header';
+@use './components/join';
+@use './components/events';
+@use './components/online';
+@use './components/meetup';
+@use './components/popular';
+@use './components/categories';
+@use './components/how';
+@use './components/friendship';
+@use './components/footer';
+
+//filter page
+@use './components/filter';
 
 // 1920
 // 1760
@@ -18,7 +22,6 @@
 // 768
 // 415
 // 375
-
 body {
   color: #212121;
 }
@@ -34,6 +37,10 @@ section {
   justify-content: center;
 }
 
+select {
+  cursor: pointer;
+  border: none;
+}
 .container {
   max-width: 1200px;
 }
