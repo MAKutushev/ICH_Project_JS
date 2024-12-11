@@ -191,7 +191,7 @@ header .right #signUp {
 .events .container .events_items .event-card.event-online .event-image img:first-child {
   border-radius: 8px;
   width: 100%;
-  height: 200px;
+  height: 153px;
   object-fit: cover;
 }
 .events .container .events_items .event-card.event-online .event-image .event-online-badge {
@@ -200,13 +200,14 @@ header .right #signUp {
   left: 10px;
   background: white;
   color: #707070;
-  padding: 5px 10px;
+  padding: 2px 16px 2px 4px;
   display: flex;
   align-items: center;
-  gap: 5px;
-  border-radius: 5px;
-  font-size: 0.9em;
-  font-weight: bold;
+  gap: 4px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
 }
 .events .container .events_items .event-card.event-online .event-image .event-online-badge img {
   width: 16px;
@@ -215,7 +216,7 @@ header .right #signUp {
 .events .container .events_items .event-card.event-offline .event-image img:first-child {
   border-radius: 8px;
   width: 100%;
-  height: 200px;
+  height: 153px;
   object-fit: cover;
 }
 .events .container .events_items .event-card .event-content {
@@ -318,7 +319,7 @@ header .right #signUp {
 .upcoming .container .upcomingEvents_items .event-card.event-online .event-image img:first-child {
   border-radius: 8px;
   width: 100%;
-  height: 200px;
+  height: 153px;
   object-fit: cover;
 }
 .upcoming .container .upcomingEvents_items .event-card.event-online .event-image .event-online-badge {
@@ -327,13 +328,14 @@ header .right #signUp {
   left: 10px;
   background: white;
   color: #707070;
-  padding: 5px 10px;
+  padding: 2px 16px 2px 4px;
   display: flex;
   align-items: center;
-  gap: 5px;
-  border-radius: 5px;
-  font-size: 0.9em;
-  font-weight: bold;
+  gap: 4px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
 }
 .upcoming .container .upcomingEvents_items .event-card.event-online .event-image .event-online-badge img {
   width: 16px;
@@ -762,7 +764,17 @@ footer .container .moreLinks a {
   border-radius: 40px;
   text-align: left;
   appearance: none;
-  position: relative;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+.filter .container .filter_events-nav-menu .select_container select:focus {
+  outline: none;
+  border: 1px solid #748284;
+  box-shadow: 0 15px 4px #e6e6ef;
+}
+.filter .container .filter_events-nav-menu .select_container select:hover {
+  background-color: #e5eef2;
+  box-shadow: 0 15px 4px #cccccf;
 }
 .filter .container .filter_events-nav-menu .select_container select option {
   font-size: 14px;
@@ -770,7 +782,6 @@ footer .container .moreLinks a {
   font-weight: 500;
   color: #212121;
   background-color: #f6f7f8;
-  border-radius: 40px;
 }
 .filter .container .filter_events-nav-menu .select_container::after {
   content: url("/assets/icons/_filter/select_arrow.svg");
@@ -782,6 +793,14 @@ footer .container .moreLinks a {
 }
 .filter .container .filter_events-nav-menu .reset_filter {
   cursor: pointer;
+  border-radius: 50%;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filter .container .filter_events-nav-menu .reset_filter:hover {
+  background-color: #dc5a5a;
 }
 .filter .container .filter_events-items {
   display: flex;
@@ -797,13 +816,32 @@ footer .container .moreLinks a {
 }
 .filter .container .filter_events-items-card_image {
   width: 160px;
-  height: 90px;
+  position: relative;
 }
 .filter .container .filter_events-items-card_image img {
   width: 100%;
   height: 100%;
   border-radius: 8px;
   object-fit: cover;
+}
+.filter .container .filter_events-items-card_image .event-type-label {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: white;
+  color: #707070;
+  padding: 2px 16px 2px 4px;
+  display: flex;
+  align-items: center;
+  gap: 2.6px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.filter .container .filter_events-items-card_image .event-type-label img {
+  width: 16px;
+  height: 16px;
 }
 .filter .container .filter_events-items-card_content {
   max-width: 433px;

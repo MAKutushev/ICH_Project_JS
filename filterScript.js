@@ -85,30 +85,79 @@ function renderEvents(events) {
     }).format(event.date)
 
     eventCard.innerHTML = `
-      <div class="filter_events-items-card_image">
-        <img src="${event.image}" alt="${event.title}">
-      </div>
-      <div class="filter_events-items-card_content">
-        <p class="event-date">${eventDate}</p>
-        <h4 class="event-title">${event.title}</h4>
-        <p class="event-category">${event.category} (${event.distance} km)</p>
+  <div class="filter_events-items-card_image">
+    <img src="${event.image}" alt="${event.title}">
+    ${
+      event.type === 'online'
+        ? `
+      <div class="event-type-label">
+        <img src="/assets/icons/_event/camera.svg" alt="Online Icon">
+        <span>Online Event</span>
+      </div>`
+        : ''
+    }
+  </div>
+  <div class="filter_events-items-card_content">
+    <p class="event-date">${eventDate}</p>
+    <h4 class="event-title">${event.title}</h4>
+    <p class="event-category">${event.category} (${event.distance} km)</p>
+    ${
+      event.attendees
+        ? `
+      <p class="event-attendees">
+        ${event.attendees} attendees
         ${
-          event.attendees
-            ? `<p class="event-attendees">
-                 ${event.attendees} attandees
-                 ${
-                   event.attendees < 5
-                     ? '<span class="spots-left">2 spots left</span>'
-                     : ''
-                 }
-               </p>`
+          event.attendees < 5
+            ? '<span class="spots-left">2 spots left</span>'
             : ''
         }
-      </div>
-    `
+      </p>`
+        : ''
+    }
+  </div>
+`
 
     eventsContainer.appendChild(eventCard)
   })
 }
+// renderEvents(filterEvents)
 
+// Filter- und Renderfunktion
+function applyFilters() {
+  const typeFilter = document.getElementById('type').value.toLowerCase()
+  const distanceFilter = parseInt(document.getElementById('distance').value)
+  const categoryFilter = document.getElementById('category').value.toLowerCase()
+  const dateFilterValue = document.getElementById('date').value
+
+  const filteredEvents = filterEvents.filter(event => {
+    const matchesType = !typeFilter || event.type.toLowerCase() === typeFilter
+    const matchesDistance = !distanceFilter || event.distance <= distanceFilter
+    const matchesCategory =
+      !categoryFilter || event.category.toLowerCase() === categoryFilter
+
+    // Datumsvergleich
+    const matchesDate =
+      !dateFilterValue ||
+      new Date(dateFilterValue).getTime() === event.date.getTime()
+
+    return matchesType && matchesDistance && matchesCategory && matchesDate
+  })
+
+  renderEvents(filteredEvents)
+}
+
+// Event-Listener für Filteroptionen hinzufügen
+document.querySelectorAll('.select_container select').forEach(select => {
+  select.addEventListener('change', applyFilters)
+})
+
+// Reset-Filter-Button
+document.querySelector('.reset_filter img').addEventListener('click', () => {
+  document.querySelectorAll('.select_container select').forEach(select => {
+    select.selectedIndex = 0
+  })
+  renderEvents(filterEvents) // Originaldaten neu rendern
+})
+
+// Initiales Rendern
 renderEvents(filterEvents)
