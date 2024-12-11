@@ -1,0 +1,61 @@
+.friendships {
+  margin-top: 64px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    width: 100%;
+
+    h3 {
+      font-size: 28px;
+      line-height: 36px;
+      font-weight: 600;
+      color: #212121;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      color: #707070;
+    }
+
+    .friendships_cards {
+      display: flex;
+      justify-content: space-between;
+      gap: 32px;
+      margin-top: 12px;
+
+      &-content {
+        width: 100%;
+
+        .image {
+          img {
+            border-radius: 8px;
+            width: 100%;
+          }
+        }
+
+        h4 {
+          margin-top: 24px;
+          font-size: 18px;
+          line-height: 28px;
+          font-weight: 600;
+          color: #212121;
+        }
+
+        p {
+          margin-top: 12px;
+          margin-bottom: 16px;
+        }
+
+        a {
+          font-size: 16px;
+          line-height: 24px;
+          color: #00798a;
+        }
+      }
+    }
+  }
+}

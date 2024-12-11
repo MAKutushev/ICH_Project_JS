@@ -1,11 +1,14 @@
 @use './reset';
 
 @use './header';
-@use './section1';
-@use './section2';
-@use './section3';
-@use './section4';
-@use './section5';
+@use './section1_join';
+@use './section2_events';
+@use './section3_online';
+@use './section4_meetup';
+@use './section5_categories';
+@use './section6_popular';
+@use './section7_how';
+@use './section8_friendship';
 @use './footer';
 
 // 1920

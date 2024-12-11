@@ -489,6 +489,148 @@ header .right #signUp {
   color: #212121;
 }
 
+.popular {
+  margin-top: 64px;
+}
+.popular .container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+.popular .container h3 {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 600;
+  color: #212121;
+}
+.popular .container p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #707070;
+}
+.popular .container .popular_cities {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 41.75px;
+}
+.popular .container .popular_cities .city {
+  text-align: center;
+}
+.popular .container .popular_cities .city img {
+  width: 100%;
+}
+.popular .container .popular_cities .city h3 {
+  margin-top: 24px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #212121;
+}
+
+.how {
+  margin-top: 64px;
+}
+.how .container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+.how .container h3 {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 600;
+  color: #212121;
+}
+.how .container .how_works {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+.how .container .how_works-exactly {
+  max-width: 580px;
+  display: flex;
+  gap: 24px;
+  background-color: rgba(151, 202, 209, 0.0784313725);
+  border-radius: 8px;
+  padding: 32px 112px 24px 24px;
+}
+.how .container .how_works-exactly .content {
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.how .container .how_works-exactly .content h4 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #212121;
+}
+.how .container .how_works-exactly .content p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #212121;
+}
+.how .container .how_works-exactly .content a {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #00798a;
+}
+
+.friendships {
+  margin-top: 64px;
+}
+.friendships .container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+.friendships .container h3 {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 600;
+  color: #212121;
+}
+.friendships .container p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #707070;
+}
+.friendships .container .friendships_cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  margin-top: 12px;
+}
+.friendships .container .friendships_cards-content {
+  width: 100%;
+}
+.friendships .container .friendships_cards-content .image img {
+  border-radius: 8px;
+  width: 100%;
+}
+.friendships .container .friendships_cards-content h4 {
+  margin-top: 24px;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #212121;
+}
+.friendships .container .friendships_cards-content p {
+  margin-top: 12px;
+  margin-bottom: 16px;
+}
+.friendships .container .friendships_cards-content a {
+  font-size: 16px;
+  line-height: 24px;
+  color: #00798a;
+}
+
 footer {
   display: flex;
   justify-content: center;

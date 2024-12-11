@@ -108,6 +108,7 @@ function renderEvents(events) {
       hour: '2-digit',
       minute: '2-digit',
       timeZoneName: 'short',
+      timeZone: 'UTC',
     }).format(event.date)
 
     eventCard.innerHTML = `
@@ -220,6 +221,7 @@ function renderUpcoming(events) {
       hour: '2-digit',
       minute: '2-digit',
       timeZoneName: 'short',
+      timeZone: 'UTC',
     }).format(event.date)
 
     eventCard.innerHTML = `
