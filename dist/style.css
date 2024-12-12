@@ -45,7 +45,7 @@ header .header-top .left .search #search-event {
   border-radius: 8px 0 0 8px;
   border-right: none;
   padding: 13px 24px 13px 37px; /* Platz für das Icon lassen */
-  background: url("../assets/icons/_header/search.svg") no-repeat left 10px center;
+  background: url("../assets/icons/header/search.svg") no-repeat left 10px center;
 }
 header .header-top .left .search #search-location {
   font-size: 16px;
@@ -102,7 +102,7 @@ header .header-bottom .header-bottom_search {
   align-items: center;
   font-size: 0;
 }
-header .header-bottom .header-bottom_search #search-event {
+header .header-bottom .header-bottom_search #search-event_bottom {
   font-size: 16px;
   line-height: 18.75px;
   font-weight: 400;
@@ -111,7 +111,7 @@ header .header-bottom .header-bottom_search #search-event {
   border-radius: 8px 0 0 8px;
   border-right: none;
   padding: 13px 24px 13px 37px; /* Platz für das Icon lassen */
-  background: url("../assets/icons/_header/search.svg") no-repeat left 10px center;
+  background: url("../assets/icons/header/search.svg") no-repeat left 10px center;
 }
 header .header-bottom .header-bottom_search button {
   padding: 11.5px;
@@ -119,7 +119,6 @@ header .header-bottom .header-bottom_search button {
   border-radius: 0 8px 8px 0;
   background-color: #f65858;
 }
-
 .main-join {
   padding: 71px 0 122px 0;
 }
@@ -251,16 +250,16 @@ header .header-bottom .header-bottom_search button {
   padding-top: 12px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
 }
 .events .container .events_items .event-card .event-content .event-title {
   font-size: 20px;
   line-height: 24px;
   font-weight: 600;
-  margin-bottom: 10px;
 }
 .events .container .events_items .event-card .event-content .event-category {
   color: #707070;
+  height: 40px;
+  margin: 8px 0;
   font-size: 14px;
   line-height: 20px;
   font-weight: 500;
@@ -268,8 +267,17 @@ header .header-bottom .header-bottom_search button {
 .events .container .events_items .event-card .event-content .event-date {
   text-transform: uppercase;
   color: #212121;
+  font-size: 14px;
   line-height: 20px;
+  font-weight: 500;
   letter-spacing: -0.35px;
+  margin-bottom: 12px;
+}
+.events .container .events_items .event-card .event-content .event-attendees {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #212121;
 }
 .events .container .events_items .event-card .event-content .event-category,
 .events .container .events_items .event-card .event-content .event-date,
@@ -279,8 +287,6 @@ header .header-bottom .header-bottom_search button {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin: 5px 0;
-  font-size: 0.95em;
 }
 .events .container .events_items .event-card .event-content .event-category img,
 .events .container .events_items .event-card .event-content .event-date img,
@@ -379,16 +385,16 @@ header .header-bottom .header-bottom_search button {
   padding-top: 12px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
 }
 .upcoming .container .upcomingEvents_items .event-card .event-content .event-title {
   font-size: 20px;
   line-height: 24px;
   font-weight: 600;
-  margin-bottom: 10px;
 }
 .upcoming .container .upcomingEvents_items .event-card .event-content .event-category {
   color: #707070;
+  height: 40px;
+  margin: 8px 0;
   font-size: 14px;
   line-height: 20px;
   font-weight: 500;
@@ -396,8 +402,17 @@ header .header-bottom .header-bottom_search button {
 .upcoming .container .upcomingEvents_items .event-card .event-content .event-date {
   text-transform: uppercase;
   color: #212121;
+  font-size: 14px;
   line-height: 20px;
+  font-weight: 500;
   letter-spacing: -0.35px;
+  margin-bottom: 12px;
+}
+.upcoming .container .upcomingEvents_items .event-card .event-content .event-attendees {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #212121;
 }
 .upcoming .container .upcomingEvents_items .event-card .event-content .event-category,
 .upcoming .container .upcomingEvents_items .event-card .event-content .event-date,
@@ -407,7 +422,6 @@ header .header-bottom .header-bottom_search button {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin: 5px 0;
 }
 .upcoming .container .upcomingEvents_items .event-card .event-content .event-category img,
 .upcoming .container .upcomingEvents_items .event-card .event-content .event-date img,

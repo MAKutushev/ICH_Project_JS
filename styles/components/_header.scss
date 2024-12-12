@@ -24,7 +24,7 @@ header {
           border-radius: 8px 0 0 8px;
           border-right: none;
           padding: 13px 24px 13px 37px; /* Platz für das Icon lassen */
-          background: url('../assets/icons/_header/search.svg') no-repeat left
+          background: url('../assets/icons/header/search.svg') no-repeat left
             10px center;
         }
 
@@ -91,7 +91,7 @@ header {
       align-items: center;
       font-size: 0;
 
-      #search-event {
+      #search-event_bottom {
         font-size: 16px;
         line-height: 18.75px;
         font-weight: 400;
@@ -100,8 +100,8 @@ header {
         border-radius: 8px 0 0 8px;
         border-right: none;
         padding: 13px 24px 13px 37px; /* Platz für das Icon lassen */
-        background: url('../assets/icons/_header/search.svg') no-repeat left
-          10px center;
+        background: url('../assets/icons/header/search.svg') no-repeat left 10px
+          center;
       }
       button {
         padding: 11.5px;
@@ -112,7 +112,6 @@ header {
     }
   }
 
-  // @media screen {
-
-  // }
+  @media (max-width: 330px) {
+  }
 }
