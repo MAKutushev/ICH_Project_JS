@@ -103,15 +103,14 @@ function renderEvents(events) {
     <p class="event-category">${event.category} (${event.distance} km)</p>
     ${
       event.attendees
-        ? `
-      <p class="event-attendees">
-        ${event.attendees} attendees
-        ${
-          event.attendees < 5
-            ? '<span class="spots-left">2 spots left</span>'
-            : ''
-        }
-      </p>`
+        ? `<p class="event-attendees">
+            ${event.attendees} attendees
+            ${
+              event === filterEvents[3]
+                ? '<span class="spots-left">2 spots left</span>'
+                : ''
+            }
+          </p>`
         : ''
     }
   </div>

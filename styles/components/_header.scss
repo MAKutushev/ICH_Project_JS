@@ -1,15 +1,92 @@
 header {
   margin-top: 11px;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 50px 0 20px;
+  padding: 0 20px;
 
-  .left {
+  .header-top {
     display: flex;
-    align-items: center;
-    gap: 40px;
+    justify-content: space-between;
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 40px;
 
-    .search {
+      .search {
+        display: flex;
+        align-items: center;
+        font-size: 0;
+
+        #search-event {
+          font-size: 16px;
+          line-height: 18.75px;
+          font-weight: 400;
+          max-width: 300px;
+          border: 1px solid #d9d9d9;
+          border-radius: 8px 0 0 8px;
+          border-right: none;
+          padding: 13px 24px 13px 37px; /* Platz für das Icon lassen */
+          background: url('../assets/icons/_header/search.svg') no-repeat left
+            10px center;
+        }
+
+        #search-location {
+          font-size: 16px;
+          line-height: 18.75px;
+          font-weight: 400;
+          width: 250px;
+          border: 1px solid #d9d9d9;
+          border-right: none;
+          padding: 13px 7px 13px 17px;
+        }
+
+        button {
+          padding: 11.5px;
+          border: none;
+          border-radius: 0 8px 8px 0;
+          background-color: #f65858;
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      .language {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        select {
+          appearance: none; /* Standard für moderne Browser */
+        }
+      }
+
+      #login {
+        border: none;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        background-color: transparent;
+      }
+
+      #signUp {
+        width: 83px;
+        height: 36px;
+        background-color: #00798a;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .header-bottom {
+    display: none;
+    margin-top: 11px;
+
+    .header-bottom_search {
       display: flex;
       align-items: center;
       font-size: 0;
@@ -18,7 +95,7 @@ header {
         font-size: 16px;
         line-height: 18.75px;
         font-weight: 400;
-        max-width: 300px;
+        width: 100%;
         border: 1px solid #d9d9d9;
         border-radius: 8px 0 0 8px;
         border-right: none;
@@ -26,17 +103,6 @@ header {
         background: url('../assets/icons/_header/search.svg') no-repeat left
           10px center;
       }
-
-      #search-location {
-        font-size: 16px;
-        line-height: 18.75px;
-        font-weight: 400;
-        width: 250px;
-        border: 1px solid #d9d9d9;
-        border-right: none;
-        padding: 13px 7px 13px 17px;
-      }
-
       button {
         padding: 11.5px;
         border: none;
@@ -46,37 +112,7 @@ header {
     }
   }
 
-  .right {
-    display: flex;
-    align-items: center;
-    gap: 22px;
-    .language {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      select {
-        appearance: none; /* Standard für moderne Browser */
-      }
-    }
+  // @media screen {
 
-    #login {
-      border: none;
-      font-size: 14px;
-      line-height: 20px;
-      font-weight: 500;
-      background-color: transparent;
-    }
-
-    #signUp {
-      width: 83px;
-      height: 36px;
-      background-color: #00798a;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      font-size: 14px;
-      line-height: 20px;
-      font-weight: 500;
-    }
-  }
+  // }
 }

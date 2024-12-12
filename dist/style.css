@@ -20,21 +20,23 @@ ul {
 
 header {
   margin-top: 11px;
+  padding: 0 20px;
+}
+header .header-top {
   display: flex;
   justify-content: space-between;
-  padding: 0 50px 0 20px;
 }
-header .left {
+header .header-top .left {
   display: flex;
   align-items: center;
   gap: 40px;
 }
-header .left .search {
+header .header-top .left .search {
   display: flex;
   align-items: center;
   font-size: 0;
 }
-header .left .search #search-event {
+header .header-top .left .search #search-event {
   font-size: 16px;
   line-height: 18.75px;
   font-weight: 400;
@@ -45,7 +47,7 @@ header .left .search #search-event {
   padding: 13px 24px 13px 37px; /* Platz für das Icon lassen */
   background: url("../assets/icons/_header/search.svg") no-repeat left 10px center;
 }
-header .left .search #search-location {
+header .header-top .left .search #search-location {
   font-size: 16px;
   line-height: 18.75px;
   font-weight: 400;
@@ -54,33 +56,33 @@ header .left .search #search-location {
   border-right: none;
   padding: 13px 7px 13px 17px;
 }
-header .left .search button {
+header .header-top .left .search button {
   padding: 11.5px;
   border: none;
   border-radius: 0 8px 8px 0;
   background-color: #f65858;
 }
-header .right {
+header .header-top .right {
   display: flex;
   align-items: center;
   gap: 22px;
 }
-header .right .language {
+header .header-top .right .language {
   display: flex;
   align-items: center;
   gap: 4px;
 }
-header .right .language select {
+header .header-top .right .language select {
   appearance: none; /* Standard für moderne Browser */
 }
-header .right #login {
+header .header-top .right #login {
   border: none;
   font-size: 14px;
   line-height: 20px;
   font-weight: 500;
   background-color: transparent;
 }
-header .right #signUp {
+header .header-top .right #signUp {
   width: 83px;
   height: 36px;
   background-color: #00798a;
@@ -90,6 +92,32 @@ header .right #signUp {
   font-size: 14px;
   line-height: 20px;
   font-weight: 500;
+}
+header .header-bottom {
+  display: none;
+  margin-top: 11px;
+}
+header .header-bottom .header-bottom_search {
+  display: flex;
+  align-items: center;
+  font-size: 0;
+}
+header .header-bottom .header-bottom_search #search-event {
+  font-size: 16px;
+  line-height: 18.75px;
+  font-weight: 400;
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px 0 0 8px;
+  border-right: none;
+  padding: 13px 24px 13px 37px; /* Platz für das Icon lassen */
+  background: url("../assets/icons/_header/search.svg") no-repeat left 10px center;
+}
+header .header-bottom .header-bottom_search button {
+  padding: 11.5px;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  background-color: #f65858;
 }
 
 .main-join {
@@ -877,6 +905,10 @@ footer .container .moreLinks a {
   color: #707070;
   position: absolute;
   bottom: -20px;
+}
+.filter .container .filter_events-items-card_content .event-attendees .spots-left {
+  color: red;
+  margin-left: 17px;
 }
 
 body {
