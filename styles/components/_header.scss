@@ -1,10 +1,11 @@
 header {
   margin-top: 11px;
-  padding: 0 20px;
-
+  padding: 0 25px;
   .header-top {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
     .left {
       display: flex;
       align-items: center;
@@ -19,12 +20,12 @@ header {
           font-size: 16px;
           line-height: 18.75px;
           font-weight: 400;
-          max-width: 300px;
+          width: 300px;
           border: 1px solid #d9d9d9;
           border-radius: 8px 0 0 8px;
           border-right: none;
           padding: 13px 24px 13px 37px; /* Platz für das Icon lassen */
-          background: url('../assets/icons/header/search.svg') no-repeat left
+          background: url('../assets/icons/_header/search.svg') no-repeat left
             10px center;
         }
 
@@ -32,7 +33,7 @@ header {
           font-size: 16px;
           line-height: 18.75px;
           font-weight: 400;
-          width: 250px;
+          width: 254px;
           border: 1px solid #d9d9d9;
           border-right: none;
           padding: 13px 7px 13px 17px;
@@ -56,6 +57,9 @@ header {
         align-items: center;
         gap: 4px;
         select {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 20px;
           appearance: none; /* Standard für moderne Browser */
         }
       }
@@ -100,8 +104,8 @@ header {
         border-radius: 8px 0 0 8px;
         border-right: none;
         padding: 13px 24px 13px 37px; /* Platz für das Icon lassen */
-        background: url('../assets/icons/header/search.svg') no-repeat left 10px
-          center;
+        background: url('../assets/icons/_header/search.svg') no-repeat left
+          10px center;
       }
       button {
         padding: 11.5px;
@@ -111,7 +115,130 @@ header {
       }
     }
   }
+}
 
-  @media (max-width: 330px) {
+@media (max-width: 1024px) {
+  header {
+    margin-top: 11px;
+    padding: 8px 20px 0;
+
+    .header-top {
+      .left {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .search {
+          display: flex;
+          align-items: center;
+          font-size: 0;
+
+          #search-event {
+            font-size: 16px;
+            line-height: 18.75px;
+            font-weight: 400;
+            width: 300px;
+            border: 1px solid #d9d9d9;
+            border-radius: 8px 0 0 8px;
+            border-right: none;
+            padding: 13px 24px 13px 37px; /* Platz für das Icon lassen */
+            background: url('../assets/icons/_header/search.svg') no-repeat left
+              10px center;
+          }
+
+          #search-location {
+            display: none;
+          }
+
+          button {
+            padding: 11.5px;
+            border: none;
+            border-radius: 0 8px 8px 0;
+            background-color: #f65858;
+          }
+        }
+      }
+    }
+
+    .header-bottom {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    margin-top: 11px;
+    padding: 8px 20px 0;
+
+    .header-top {
+      .left {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .search {
+          display: none;
+        }
+      }
+    }
+
+    .header-bottom {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  header {
+    padding: 4px 15px 0;
+    .header-top {
+      .left {
+        .search {
+          display: none;
+        }
+      }
+
+      .right {
+        gap: 15px;
+        .language {
+          img {
+            width: 17.09px;
+            height: 17.09px;
+            margin-bottom: 2px;
+          }
+          gap: 3px;
+          select {
+            font-size: 10px;
+            font-weight: 500;
+            line-height: 17.09px;
+          }
+        }
+
+        #login {
+          font-size: 12px;
+          line-height: 17.09px;
+        }
+
+        #signUp {
+          width: 71px;
+          height: 30px;
+          border-radius: 6.8px;
+          font-size: 12px;
+          line-height: 17.09px;
+        }
+      }
+    }
+
+    .header-bottom {
+      display: block;
+      margin-top: 11px;
+
+      .header-bottom_search {
+        button {
+          margin-bottom: 1.5px;
+        }
+      }
+    }
   }
 }

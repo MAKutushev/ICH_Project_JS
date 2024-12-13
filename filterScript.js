@@ -119,6 +119,7 @@ function renderEvents(events) {
     eventsContainer.appendChild(eventCard)
   })
 }
+
 // renderEvents(filterEvents)
 
 // Filter- und Renderfunktion

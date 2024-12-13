@@ -126,18 +126,33 @@ function renderEvents(events) {
         }
       </div>
       <div class="event-content">
+        <p class="event-date_mobile">
+          <img src="./assets/icons/_event/date.svg" alt="" />
+          ${eventDate}
+        </p>
         <h3 class="event-title">${event.title}</h3>
         <p class="event-category">${event.category} <span>(${
       event.distance
     } km)</span></p>
-        <p class="event-date">
+        <p class="event-date_desktop">
           <img src="./assets/icons/_event/date.svg" alt="" />
           ${eventDate}
         </p>
+                   ${
+                     event.type === 'online'
+                       ? `
+        <div class="event-online-badge-min">
+          <img src="./assets/icons/_event/camera.svg" alt="Camera Icon" />
+          Online Event
+        </div>
+        `
+                       : ''
+                   }
         <div class="event-details-row">
         <p class="event-attendees">
           <img src="./assets/icons/_event/going.svg" alt="" />
-          ${event.attendees} going
+          ${event.attendees} <span class="span-going">going</span>
+          <span class="span-attend">attendees</span>
         </p>
         <p class="event-free">
           <img src="./assets/icons/_event/free.svg" alt="" />
@@ -239,18 +254,34 @@ function renderUpcoming(events) {
         }
       </div>
       <div class="event-content">
+      <p class="event-date_mobile">
+          <img src="./assets/icons/_event/date.svg" alt="" />
+          ${eventDate}
+        </p>
         <h3 class="event-title">${event.title}</h3>
         <p class="event-category">${event.category} <span>(${
       event.distance
     } km)</span></p>
-        <p class="event-date">
+        <p class="event-date_desktop">
           <img src="./assets/icons/_event/date.svg" alt="" />
           ${eventDate}
         </p>
+               ${
+                 event.type === 'online'
+                   ? `
+        <div class="event-online-badge-min">
+          <img src="./assets/icons/_event/camera.svg" alt="Camera Icon" />
+          Online Event
+        </div>
+        `
+                   : ''
+               }
         <div class="event-details-row">
         <p class="event-attendees">
           <img src="./assets/icons/_event/going.svg" alt="" />
-          ${event.attendees} going
+          ${event.attendees} <span class="span-going">going</span>
+          <span class="span-attend">attendees</span>
+        </p>
         </p>
         <p class="event-free">
           <img src="./assets/icons/_event/free.svg" alt="" />

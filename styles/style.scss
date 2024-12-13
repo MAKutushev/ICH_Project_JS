@@ -6,8 +6,8 @@
 @use './components/events';
 @use './components/online';
 @use './components/meetup';
-@use './components/popular';
 @use './components/categories';
+@use './components/popular';
 @use './components/how';
 @use './components/friendship';
 @use './components/footer';
@@ -25,7 +25,7 @@ body {
 }
 
 main {
-  padding: 0 30px;
+  padding: 0 25px;
   // margin: 0 auto;
   // width: 1200px;
 }
@@ -41,4 +41,15 @@ select {
 }
 .container {
   max-width: 1200px;
+}
+
+@media (max-width: 430px) {
+  body {
+    main {
+      padding: 0 15px;
+    }
+  }
+  // .container {
+  //   max-width: 400px;
+  // }
 }

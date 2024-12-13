@@ -33,6 +33,7 @@
         &-menu {
           display: flex;
           align-items: center;
+          flex-wrap: wrap;
           gap: 10px;
 
           .select_container {
@@ -56,12 +57,10 @@
               &:focus {
                 outline: none;
                 border: 1px solid #748284;
-                box-shadow: 0 15px 4px #e6e6ef;
               }
 
               &:hover {
                 background-color: #e5eef2;
-                box-shadow: 0 15px 4px #cccccf;
               }
 
               option {
@@ -93,8 +92,6 @@
 
             &:hover {
               background-color: #dc5a5a;
-              // border: 1px solid #748284;
-              // box-shadow: 0 15px 4px #d1c9c9;
             }
           }
         }
@@ -193,11 +190,352 @@
         }
       }
     }
+  }
+}
 
-    // .filter_map {
-    //   display: flex;
-    //   flex-direction: column;
-    //   align-self: center;
-    // }
+@media (max-width: 1024px) {
+  .filter {
+    margin-top: 41px;
+
+    .container {
+      position: relative;
+      .filter_events {
+        &-nav {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+
+          &-menu {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            max-width: 400px;
+          }
+        }
+
+        &-items {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          margin-top: 56px;
+
+          &-card {
+            display: flex;
+            max-width: 604px;
+            border-top: 1px solid #d9d9d9;
+            padding: 16px 0;
+
+            &_image {
+              width: 160px;
+              // height: 90px;
+              position: relative;
+
+              img {
+                width: 100%;
+                height: 100%;
+                border-radius: 8px;
+                object-fit: cover;
+              }
+
+              .event-type-label {
+                position: absolute;
+                top: 8px;
+                left: 8px;
+                background: white;
+                color: #707070;
+                padding: 2px 16px 2px 4px;
+                display: flex;
+                align-items: center;
+                gap: 2.6px;
+                border-radius: 4px;
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 16px;
+
+                img {
+                  width: 16px;
+                  height: 16px;
+                }
+              }
+            }
+
+            &_content {
+              max-width: 433px;
+              height: 100%;
+              padding: 16px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              position: relative;
+
+              .event-date {
+                line-height: 20px;
+                font-weight: 500;
+                font-size: 14px;
+                color: #7c6f50;
+                letter-spacing: -0.35px;
+              }
+
+              .event-title {
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 500;
+                color: #212121;
+              }
+
+              .event-category {
+                line-height: 20px;
+                font-weight: 500;
+                font-size: 14px;
+                color: #707070;
+              }
+
+              .event-attendees {
+                line-height: 20px;
+                font-size: 14px;
+                color: #707070;
+                position: absolute;
+                bottom: -20px;
+
+                .spots-left {
+                  color: red;
+                  margin-left: 17px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .filter_map {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .filter {
+    margin-top: 41px;
+
+    .container {
+      .filter_events {
+        &-nav {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+
+          &-menu {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            max-width: 400px;
+          }
+        }
+
+        &-items {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          margin-top: 56px;
+
+          &-card {
+            display: flex;
+            max-width: 604px;
+            border-top: 1px solid #d9d9d9;
+            padding: 16px 0;
+
+            &_image {
+              width: 160px;
+              // height: 90px;
+              position: relative;
+
+              img {
+                width: 100%;
+                height: 100%;
+                border-radius: 8px;
+                object-fit: cover;
+              }
+
+              .event-type-label {
+                position: absolute;
+                top: 8px;
+                left: 8px;
+                background: white;
+                color: #707070;
+                padding: 2px 16px 2px 4px;
+                display: flex;
+                align-items: center;
+                gap: 2.6px;
+                border-radius: 4px;
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 16px;
+
+                img {
+                  width: 16px;
+                  height: 16px;
+                }
+              }
+            }
+
+            &_content {
+              max-width: 433px;
+              height: 100%;
+              padding: 16px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              position: relative;
+
+              .event-date {
+                line-height: 20px;
+                font-weight: 500;
+                font-size: 14px;
+                color: #7c6f50;
+                letter-spacing: -0.35px;
+              }
+
+              .event-title {
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 500;
+                color: #212121;
+              }
+
+              .event-category {
+                line-height: 20px;
+                font-weight: 500;
+                font-size: 14px;
+                color: #707070;
+              }
+
+              .event-attendees {
+                line-height: 20px;
+                font-size: 14px;
+                color: #707070;
+                position: absolute;
+                bottom: -20px;
+
+                .spots-left {
+                  color: red;
+                  margin-left: 17px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .filter_map {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .filter {
+    margin-top: 22px;
+
+    .container {
+      .filter_events {
+        h2 {
+          font-size: 25px;
+        }
+        &-nav {
+          margin-top: 16px;
+          gap: 16px;
+
+          h3 {
+            margin-top: 16px;
+          }
+
+          &-menu {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+          }
+        }
+
+        &-items {
+          display: flex;
+          flex-direction: column;
+          gap: 20.5px;
+          margin: 0;
+          margin-top: 10px;
+
+          &-card {
+            display: flex;
+            flex-direction: unset;
+            gap: 7.35px;
+            border-top: 0.61px solid #d9d9d9;
+            position: relative;
+
+            &_image {
+              width: 97px;
+              height: 55px;
+
+              img {
+                width: 100%;
+                border-radius: 4.9px;
+              }
+
+              .event-type-label {
+                display: none;
+              }
+            }
+
+            &_content {
+              padding-top: 2.2px;
+              gap: 2px;
+              max-width: 265px;
+
+              .event-date {
+                display: flex;
+                color: #7c6f50;
+                font-size: 8.58px;
+                line-height: 12.26px;
+                letter-spacing: 0;
+              }
+
+              .event-title {
+                font-size: 9.81px;
+                font-weight: 500;
+                line-height: 14.7px;
+              }
+
+              .event-category {
+                font-size: 8.44px;
+                font-weight: 400;
+                height: 12px;
+                display: flex;
+                align-items: center;
+              }
+
+              .event-attendees {
+                display: flex;
+                align-items: center;
+                gap: 2px;
+
+                .spots-left {
+                  color: red;
+                  margin-left: 17px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .filter_map {
+        display: none;
+      }
+    }
   }
 }
